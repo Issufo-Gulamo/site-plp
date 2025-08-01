@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Site exemplo com estrutura semântica, acessível e otimizada para SEO." />
+  <meta name="keywords" content="HTML5, acessibilidade, SEO, estrutura semântica, web development" />
+  <meta name="author" content="Issufo Gulamo" />
+  <title>Site Exemplo Semântico e Acessível</title>
+</head>
+<body>
+
+  <header>
+    <h1>Bem-vindo ao Meu Site</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre">Sobre Nós</h2>
+      <p>Somos uma empresa dedicada ao desenvolvimento web com foco em acessibilidade, SEO e estrutura semântica.</p>
+    </section>
+
+    <section id="servicos" aria-labelledby="titulo-servicos">
+      <h2 id="titulo-servicos">Nossos Serviços</h2>
+
+      <article aria-labelledby="titulo-desenvolvimento">
+        <h3 id="titulo-desenvolvimento">Desenvolvimento Web</h3>
+        <p>Criamos sites modernos e otimizados, focados na melhor experiência do usuário.</p>
+      </article>
+
+      <article aria-labelledby="titulo-consultoria">
+        <h3 id="titulo-consultoria">Consultoria em SEO</h3>
+        <p>Melhoramos sua presença online com práticas eficazes de SEO.</p>
+      </article>
+    </section>
+
+    <section id="contato" aria-labelledby="titulo-contato">
+      <h2 id="titulo-contato">Fale Conosco</h2>
+      <form aria-label="Formulário de contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Issufo Gulamo. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
